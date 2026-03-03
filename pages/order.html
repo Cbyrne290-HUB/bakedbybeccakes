@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Place an order with Baked By Bec — custom cakes, cupcakes, dessert boxes and sweet treats in Dublin." />
+  <title>Place an Order — Baked By Bec</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="logo__name">Baked by Bec</span>
+        <span class="logo__tag">Custom Cakes & Sweet Treats</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="../index.html#offerings">Our Treats</a></li>
+        <li><a href="../index.html#how-it-works">How It Works</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="nav__cta">Place an Order</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="section__label">Custom Orders</span>
+        <h1 class="page-hero__title">Place your order<br /><span class="hero__accent">with Baked by Bec</span></h1>
+        <p class="page-hero__sub">Fill in the form below and choose how you'd like to pay. Bec will be in touch to confirm your order details.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section class="section order-section">
+    <div class="container">
+      <div class="order__inner">
+
+        <!-- LEFT — INFO -->
+        <div class="order__info">
+          <span class="section__label">Before You Order</span>
+          <h2 class="order__title">A few things to know</h2>
+          <p class="order__body">All orders are made fresh to order. To give your order the attention it deserves, please book as far in advance as possible — especially for weddings and large events.</p>
+
+          <div class="order__details">
+            <div class="order__detail-item">
+              <div class="order__detail-icon">📅</div>
+              <div>
+                <strong>Advance Notice</strong>
+                <span>Minimum 1 week for cakes, 48hrs for treat boxes</span>
+              </div>
+            </div>
+            <div class="order__detail-item">
+              <div class="order__detail-icon">📍</div>
+              <div>
+                <strong>Collection Only</strong>
+                <span>Unit 5B Block 5, Killinarden Enterprise Park, Dublin</span>
+              </div>
+            </div>
+            <div class="order__detail-item">
+              <div class="order__detail-icon">💳</div>
+              <div>
+                <strong>Payment Options</strong>
+                <span>Pay securely online by card or pay on collection</span>
+              </div>
+            </div>
+            <div class="order__detail-item">
+              <div class="order__detail-icon">✉️</div>
+              <div>
+                <strong>Confirmation</strong>
+                <span>You'll receive an email confirmation after placing your order</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="order__contact-alt">
+            <p>Prefer to chat first?</p>
+            <a href="tel:0830207111" class="btn btn--outline">📞 Call Bec Directly</a>
+            <a href="https://wa.me/353830207111" target="_blank" class="btn btn--ghost">WhatsApp Us</a>
+          </div>
+        </div>
+
+        <!-- RIGHT — FORM -->
+        <div class="order__form-wrap">
+          <div class="order__form-card">
+            <h3>Your Order Details</h3>
+            <p>Fill in as much detail as possible and we'll get back to you to confirm everything.</p>
+
+            <form class="order__form" id="orderForm">
+
+              <div class="form__row">
+                <div class="form__group">
+                  <label>Your Name <span>*</span></label>
+                  <input type="text" placeholder="e.g. Sarah Murphy" required />
+                </div>
+                <div class="form__group">
+                  <label>Phone Number <span>*</span></label>
+                  <input type="tel" placeholder="e.g. 083 123 4567" required />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label>Email Address <span>*</span></label>
+                <input type="email" placeholder="your@email.com" required />
+              </div>
+
+              <div class="form__row">
+                <div class="form__group">
+                  <label>Order Type <span>*</span></label>
+                  <select required>
+                    <option value="" disabled selected>Select what you'd like</option>
+                    <option>Custom Cake</option>
+                    <option>Cupcakes</option>
+                    <option>Dessert Box</option>
+                    <option>Stuffed Cookies</option>
+                    <option>Cakesicles</option>
+                    <option>Dipped Strawberries</option>
+                    <option>Kinder Cookie / Pie</option>
+                    <option>Mixed / Multiple Items</option>
+                    <option>Other — I'll explain below</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label>Collection Date <span>*</span></label>
+                  <input type="date" required />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label>Occasion</label>
+                <select>
+                  <option value="" disabled selected>What's the occasion?</option>
+                  <option>Birthday</option>
+                  <option>Wedding</option>
+                  <option>Baby Shower</option>
+                  <option>Engagement</option>
+                  <option>Anniversary</option>
+                  <option>Christening</option>
+                  <option>Mother's Day</option>
+                  <option>Valentine's Day</option>
+                  <option>Just Because 🎉</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label>Sponge Flavour (for cakes)</label>
+                <select>
+                  <option value="" disabled selected>Choose a sponge</option>
+                  <option>Vanilla</option>
+                  <option>Chocolate</option>
+                  <option>Red Velvet</option>
+                  <option>Lemon</option>
+                  <option>Biscoff</option>
+                  <option>Funfetti</option>
+                  <option>Not sure yet — discuss with Bec</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label>Order Details & Design Ideas <span>*</span></label>
+                <textarea placeholder="Tell us everything! Colours, theme, any inspo pictures you have in mind, number of servings needed, fillings, dietary requirements etc." required></textarea>
+              </div>
+
+              <!-- PAYMENT SECTION -->
+              <div class="payment__section">
+                <h4>How would you like to pay?</h4>
+                <p>Choose your preferred payment method. Card payments are processed securely via Stripe.</p>
+
+                <div class="payment__options">
+                  <label class="payment__option" id="payCardOption">
+                    <input type="radio" name="payment" value="card" />
+                    <div class="payment__option-inner">
+                      <div class="payment__option-icon">💳</div>
+                      <div>
+                        <strong>Pay Now by Card</strong>
+                        <span>Secure online payment via Stripe</span>
+                      </div>
+                      <div class="payment__check"></div>
+                    </div>
+                  </label>
+                  <label class="payment__option" id="payCollectionOption">
+                    <input type="radio" name="payment" value="collection" />
+                    <div class="payment__option-inner">
+                      <div class="payment__option-icon">🏪</div>
+                      <div>
+                        <strong>Pay on Collection</strong>
+                        <span>Pay cash or card when you collect</span>
+                      </div>
+                      <div class="payment__check"></div>
+                    </div>
+                  </label>
+                </div>
+
+                <!-- STRIPE BLOCK (shown when card selected) -->
+                <div class="stripe__block" id="stripeBlock">
+                  <div class="stripe__notice">
+                    <span>🔒</span>
+                    <p>After submitting your order, Bec will review your request and send you a secure Stripe payment link directly to your email to complete the transaction.</p>
+                  </div>
+                </div>
+
+                <!-- COLLECTION BLOCK (shown when collection selected) -->
+                <div class="collection__block" id="collectionBlock">
+                  <div class="collection__notice">
+                    <span>📍</span>
+                    <p>You'll pay when you collect from Unit 5B Block 5, Killinarden Enterprise Park, Dublin. Bec will confirm your order by email or phone.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                Submit My Order ✨
+              </button>
+
+            </form>
+
+            <!-- SUCCESS MESSAGE -->
+            <div class="order__success" id="orderSuccess">
+              <div class="order__success-icon">🎂</div>
+              <h3>Order Received!</h3>
+              <p>Thank you so much for your order! Bec will be in touch within 24 hours to confirm everything and get your treat sorted.</p>
+              <p class="order__success-sub">Check your email for a confirmation. Can't wait to make something special for you! 🎉</p>
+              <a href="../index.html" class="btn btn--primary">Back to Home</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="../index.html" class="nav__logo footer__logo">
+            <span class="logo__name">Baked by Bec</span>
+            <span class="logo__tag">Custom Cakes & Sweet Treats</span>
+          </a>
+          <p>Handcrafted custom cakes, cupcakes and sweet treats made fresh in Dublin for every occasion.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/bakedbybeccakes/?hl=en" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.facebook.com/p/Baked-By-Bec-61555844333979/" target="_blank" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@bakedbybeccakes" target="_blank" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Our Treats</h4>
+          <ul>
+            <li>Custom Cakes</li><li>Cupcakes</li><li>Dessert Boxes</li>
+            <li>Stuffed Cookies</li><li>Cakesicles</li><li>Dipped Strawberries</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Place an Order</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="../index.html#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="tel:0830207111">083 020 7111</a></li>
+            <li><a href="mailto:bakedbybeccakes@hotmail.com">bakedbybeccakes@hotmail.com</a></li>
+            <li>Unit 5B Block 5</li>
+            <li>Killinarden Enterprise Park</li>
+            <li>Dublin, D24 YD91</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Baked By Bec. All rights reserved.</p>
+        <p>Website by <a href="https://cbyrne290-hub.github.io/driven-development" target="_blank">Driven Development</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

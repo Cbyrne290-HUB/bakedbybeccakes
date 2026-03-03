@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery — Baked By Bec. Browse our custom cakes, cupcakes, dessert boxes and sweet treats." />
+  <title>Gallery — Baked By Bec</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="logo__name">Baked by Bec</span>
+        <span class="logo__tag">Custom Cakes & Sweet Treats</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="../index.html#offerings">Our Treats</a></li>
+        <li><a href="../index.html#how-it-works">How It Works</a></li>
+        <li><a href="gallery.html" class="nav__active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="nav__cta">Place an Order</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="section__label">Our Portfolio</span>
+        <h1 class="page-hero__title">Every creation,<br /><span class="hero__accent">made with love</span></h1>
+        <p class="page-hero__sub">Browse through some of our favourite custom cakes, cupcakes and sweet treats. Every single one made fresh and from scratch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY FILTER -->
+  <section class="gallery-filter-section">
+    <div class="container">
+      <div class="filter__tabs">
+        <button class="filter__btn active" data-filter="all">All</button>
+        <button class="filter__btn" data-filter="cakes">Cakes</button>
+        <button class="filter__btn" data-filter="cupcakes">Cupcakes</button>
+        <button class="filter__btn" data-filter="boxes">Dessert Boxes</button>
+        <button class="filter__btn" data-filter="cookies">Cookies & Treats</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL GALLERY -->
+  <section class="section gallery-full">
+    <div class="container">
+      <div class="gallery-full__grid" id="galleryGrid">
+
+        <div class="gallery-full__item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80&fit=crop" alt="Custom birthday cake" />
+          <div class="gallery-full__overlay">
+            <span>Custom Birthday Cake</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cupcakes">
+          <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=600&q=80&fit=crop" alt="Custom cupcakes" />
+          <div class="gallery-full__overlay">
+            <span>Custom Cupcake Set</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="boxes">
+          <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=600&q=80&fit=crop" alt="Dessert box" />
+          <div class="gallery-full__overlay">
+            <span>Dessert Gift Box</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600&q=80&fit=crop" alt="Wedding cake" />
+          <div class="gallery-full__overlay">
+            <span>Elegant Wedding Cake</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cookies">
+          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80&fit=crop" alt="Stuffed cookies" />
+          <div class="gallery-full__overlay">
+            <span>Stuffed Cookies</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80&fit=crop" alt="Celebration cake" />
+          <div class="gallery-full__overlay">
+            <span>Celebration Cake</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cupcakes">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80&fit=crop" alt="Birthday cupcakes" />
+          <div class="gallery-full__overlay">
+            <span>Birthday Cupcakes</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cookies">
+          <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&q=80&fit=crop" alt="Cakesicles" />
+          <div class="gallery-full__overlay">
+            <span>Cakesicles</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="boxes">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80&fit=crop" alt="Dipped strawberries" />
+          <div class="gallery-full__overlay">
+            <span>Dipped Strawberries</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1551404973-761c83cd8339?w=600&q=80&fit=crop" alt="Chocolate drip cake" />
+          <div class="gallery-full__overlay">
+            <span>Chocolate Drip Cake</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="boxes">
+          <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=600&q=80&fit=crop" alt="Sweet treat box" />
+          <div class="gallery-full__overlay">
+            <span>Sweet Treat Box</span>
+          </div>
+        </div>
+
+        <div class="gallery-full__item" data-category="cakes">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&q=80&fit=crop" alt="Pink birthday cake" />
+          <div class="gallery-full__overlay">
+            <span>Pink Birthday Cake</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <span class="section__label">Like What You See?</span>
+        <h2>Let's make something just for you</h2>
+        <p>Every piece in this gallery started with someone just like you getting in touch. Your creation is just an order away.</p>
+        <div class="cta-banner__actions">
+          <a href="order.html" class="btn btn--white">Place an Order</a>
+          <a href="contact.html" class="btn btn--white-outline">Ask a Question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="../index.html" class="nav__logo footer__logo">
+            <span class="logo__name">Baked by Bec</span>
+            <span class="logo__tag">Custom Cakes & Sweet Treats</span>
+          </a>
+          <p>Handcrafted custom cakes, cupcakes and sweet treats made fresh in Dublin for every occasion.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/bakedbybeccakes/?hl=en" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.facebook.com/p/Baked-By-Bec-61555844333979/" target="_blank" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@bakedbybeccakes" target="_blank" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Our Treats</h4>
+          <ul>
+            <li>Custom Cakes</li><li>Cupcakes</li><li>Dessert Boxes</li>
+            <li>Stuffed Cookies</li><li>Cakesicles</li><li>Dipped Strawberries</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Place an Order</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="../index.html#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="tel:0830207111">083 020 7111</a></li>
+            <li><a href="mailto:bakedbybeccakes@hotmail.com">bakedbybeccakes@hotmail.com</a></li>
+            <li>Unit 5B, Killinarden Enterprise Park</li>
+            <li>Dublin, D24 YD91</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Baked By Bec. All rights reserved.</p>
+        <p>Website by <a href="https://cbyrne290-hub.github.io/driven-development" target="_blank">Driven Development</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>
